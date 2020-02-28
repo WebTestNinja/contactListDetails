@@ -11,12 +11,12 @@ describe("enzyme context snapshot", () => {
     expect(tree).toMatchSnapshot();
   });
   it('allows to set props', () => {
-    const wrapper = mount(<ContactItem name="vijay" />);
+    const wrapper = mount(<ContactItem name="vijay" email="vijaysinghfed@klm.com"/>);
     expect(wrapper.props().name).toEqual('vijay');
   });
   it('renders contact-items', () => {
     const wrapper = shallow(<ContactItem name="vijay" email="vijaysinghfed@klm.com"/>);
-    expect(wrapper.contains(<h3>vijay</h3>)).toBeTruthy();
+    expect(wrapper.contains(<h2>vijay</h2>)).toBeTruthy();
   });
 
 });

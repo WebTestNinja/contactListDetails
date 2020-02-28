@@ -29,7 +29,9 @@ const ContactItem = ({ name, email, phone, pic, location }) => (
 ContactItem.propTypes = {
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
-  phone: PropTypes.string
+  pic: PropTypes.string,
+  phone: PropTypes.string,
+  location: PropTypes.object
 };
 
 export default ContactItem;
